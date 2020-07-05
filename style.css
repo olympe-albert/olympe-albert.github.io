@@ -4,6 +4,17 @@
     font-family: 'CantoraOne-Regular';
     src: url('Cantora_One/CantoraOne-Regular.ttf') format('truetype');
 }
+body
+{
+    margin:0px;
+}
+/** bloc page **/
+
+.bloc_page
+{
+    max-width: 1140px;
+    margin: auto;
+}
 
 /** header **/
 
@@ -17,7 +28,7 @@ figure
 {
     flex:1.6;
     max-width: 210px;
-    background-color: rgb(118,255,3);
+    background-color: rgb(118, 255, 3);
     margin: auto;
     padding: 30px 30px;
 }
@@ -207,7 +218,7 @@ section
     margin-bottom: 30px;
 }
 
-.arrow_1
+.arrow
 {
     width: 0;
     height: 0;
@@ -218,29 +229,23 @@ section
     margin-right: 5px;
 }
 
-.arrow_2
+
+.arrow_color_grey
 {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 5px 0 5px 10px;
     border-color: transparent transparent transparent grey;
-    margin-top: 10px;
-    margin-right: 5px;
 }
 
-
-.bloc_formation_1, .bloc_formation_2, .bloc_experience_1, .bloc_experience_2, .bloc_experience_3, .referents
+.display_flex
 {
     display: flex;
 }
 
-.paragraphe_dates
+.flex_1
 {
     flex:1;
 }
 
-.paragraphe_formation, .paragraphe_experience
+.flex_5
 {
     flex:5;
 }
@@ -264,15 +269,15 @@ section p, section ul
     font-size: 0.7em;
 }
 
-.referents ul
+.references ul
 {
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     list-style: none;
     padding-left: 0px;
 }
 
-.referents li
+.references li
 {
     margin-right: 50px;
 }
@@ -282,6 +287,22 @@ section p, section ul
     section
     {
         margin-left: 20px;
+    }
+
+    .display_flex
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex_5
+    {
+        margin-top: 0px;
+    }
+
+    .arrow
+    {
+        display: none;
     }
 
     .filet_2
